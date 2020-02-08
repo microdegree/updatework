@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KD29V9Z');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title>Micro Degree</title>
+
+    <!---Font Icon-->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icon.css">
+
+    <!-- Place/logo-icon.png in the root directory -->
+    <link rel="shortcut icon" href="assets/images/logo-icon.png">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="home-agency">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD29V9Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Site Header
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <header class="site-header header-style-five">
+        <nav class="site-navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navigation-area">
+                            <div class="site-logo-block">
+                                <a class="navbar-brand site-logo" href="index.html">
+                                    <img src="assets/images/logo/logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <!--~./ end site logo block ~-->
+                            <div class="mainmenu-wrap">
+                                <nav class="menu">
+                                    <ul id="nav">
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="./full-stack-development.html">Course</a></li>
+                                        <li><a href="./index.html">F.A.Qs</a></li>
+                                        <!-- <li><a href="./index.html">Blog</a></li> -->
+                                        <li><a class="active" href="./hiring-partners.html">Hiring Partners</a></li>
+                                        <!-- <li><a class="btn btn-primary btn-gradient" href="#contact">Contact us</a></li> -->
+                                    </ul>
+                                </nav>
+                                <!--/.menu-->
+                            </div>
+                            <!--~./ end mainmenu wrap ~-->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--~./ end site navigation ~-->
+
+        <!--~~~~~ Start Mobile Menu ~~~~~-->
+        <div class="mobile-menu">
+            <a class="mobile-logo" href="index.html">
+                <img src="assets/images/logo/logo.png" alt="logo">
+            </a>
+        </div>
+        <!--~~./ end mobile menu ~~-->
+    </header>
+    <!-- End site header -->
+
+    <!--~~~ Sticky Header ~~~-->
+    <div id="sticky-header"></div>
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Hiring Partner Enroll Form
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+    <!--~~~ Using Netlify Form  ~~~-->
+    <form name="hiringPartnerEnrolForm" method="POST" class="hiringPartnerEnrolForm" data-netlify="true"
+        data-netlify-recaptcha="true" action="./hiring-dashboard.html">
+
+        <h4 class="title-script">Hiring Partner Registration Details</h4>
+
+        <div class="form-group selectCourse">
+            <label for="nameInputLabel">Name *</label>
+            <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp"
+                name="hiringParterContactName" placeholder="full name" required>
+        </div>
+
+        <div class="form-group selectCourse">
+            <label for="companyInputLabel">Company *</label>
+            <input type="text" class="form-control form-control-lg" id="companyInputLabel" name="company"
+                aria-describedby="companyHelp" placeholder="company name" required>
+        </div>
+
+        <div class="form-group selectCourse">
+            <label for="roleInputLabel">Role *</label>
+            <input type="text" class="form-control form-control-lg" id="roleInputLabel" aria-describedby="roleHelp"
+                name="hiringParterRole" placeholder="role in company" required>
+        </div>
+
+        <div class=" form-group selectCourse">
+            <label for="emailInputLabel">Business Email *</label>
+            <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="businessEmail"
+                aria-describedby="emailHelp" placeholder="work email" required>
+        </div>
+
+        <div class="form-group selectCourse">
+            <label for="contactNumberInputLabel">Contact Number *</label>
+            <input type="text" class="form-control form-control-lg" id="contactNumInputLabel" name="mobileNum"
+                aria-describedby="contactHelp" placeholder="mobile number" pattern="[1-9]{1}[0-9]{9}" maxlength="10"
+                oninvalid="this.setCustomValidity(this.willValidate?'':'Please enter a valid Mobile Number')" required>
+        </div>
+
+        <div data-netlify-recaptcha="true"></div>
+
+        <button type="submit" class="btn btn-primary enrollSubmitButton" onsubmit="myFunction()">Submit</button>
+
+        <div class="section-lead">*Signup to get free access to our hiring dashboard for an year</div>
+
+    </form>
+
+
+    <!--~~~ Web Form End ~~~-->
+
+    <!-- <div class="embed-responsive embed-responsive-1by1">
+
+        <iframe id="enrol form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSehxLoRI04iKL3tAbAYgUI1bCV3Op6YmrqkJg55XvYvPij4qw/viewform?embedded=true"
+            width="640" height="2124" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+
+    <a class="btn-custom btn-font paymentButton1 paymentButton"
+        href="upi://pay?pa=microdegree@ybl&pn=Microdegree&mc=0000&et=PPAlg42&ep=KsuNoMxyyVR1WiKw3GzhaADpFYYuw_MMtB7mn_n-lA0Mq3zYzXq9bOrGAbOYo6hmSB5mftrGbhjpD0CJk1Hma0uHc_sNhSHehXFWME6TvmE=&mode=02&purpose=00">
+        Microdegree Payment Link</button> -->
+
+
+
+
+    <!-- jQuery js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Popper js -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Aos js -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Navscroll js -->
+    <script src="assets/js/navscroll.min.js"></script>
+    <!-- Owl carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Magnific popup js -->
+    <script src="assets/js/magnific-popup.js"></script>
+    <!-- Youtube video js -->
+    <script src="assets/js/youtube-video.js"></script>
+    <!-- Syotimer js -->
+    <script src="assets/js/SyoTimer.js"></script>
+    <!-- Plugin js -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+<script>
+    $('#enrollForm').data('formValidation').resetForm();
+</script>
+
+</html>
