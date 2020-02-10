@@ -107,77 +107,96 @@
         Enroll Form
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
+    <section class="destinations-area section-gap" id="Area">
+        <div class="container">
+         			
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="single-destinations">
+                        <div class="thumb">
+                            <img src="img/packages/d1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <form name="enrollForm" method="POST" class="candidateEnrolForm" data-netlify="true"
+                            action="./pay-and-confirm-slot.html">
+                           <center><h2 class="mb-10" style="color:#0094ff">Registration Details</h1></center> 
+                            <!-- <h4 class="title-script">Registration Details</h4> -->
+                    
+                            <div class=" form-group selectCourse">
+                                <label for="emailInputLabel">Email address *</label>
+                                <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail"
+                                    aria-describedby="emailHelp" placeholder="" required >
+                            </div>
+                    
+                            <div class="form-group selectCourse">
+                                <label for="nameInputLabel">Candidate Name *</label>
+                                <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp"
+                                    name="candidateName" placeholder="" required>
+                            </div>
+                    
+                            <div class="form-group selectCourse">
+                                <label for="instituteInputLabel">Candidate's Institution *</label>
+                                <input type="text" class="form-control form-control-lg" id="instituteInputLabel" name="candidateInstitute"
+                                    aria-describedby="instituteHelp" placeholder="" required>
+                            </div>
+                    
+                            <div class="form-group selectCourse">
+                                <label for="contactNumberInputLabel">Contact Number *</label>
+                                <input type="text" class="form-control form-control-lg" id="contactNumInputLabel" name="mobileNum"
+                                    aria-describedby="contactHelp" placeholder="" pattern="[1-9]{1}[0-9]{9}" maxlength="10"
+                                    oninvalid="this.setCustomValidity(this.willValidate?'':'Please enter a valid Mobile Number')" required>
+                            </div>
+                    
+                            <fieldset class="form-group selectCourse ">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-5 pt-0">Your current graduation Course? *</legend><br>
+                                    <div class="col-sm-10" >
+                                        <div class="form-check selectCourse form-check-inline" >
+                                            <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1" value="MCA" 
+                                                checked>
+                                            <label class="form-check-label form-control form-control-lg " for="gridRadios1" style="width: 100px;">
+                                                MCA
+                                            </label>
+                                        </div>
+                                        <div class="form-check selectCourse form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="BCA">
+                                            <label class="form-check-label form-control  form-control-lg " for="gridRadios2">
+                                                BCA
+                                            </label>
+                                        </div>
+                                        <div class="form-check selectCourse form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                                value="BE Or BSc or Others">
+                                            <label class="form-check-label form-control form-control-lg " for="gridRadios3">
+                                                BE or BSc.
+                                            </label>
+                                        </div>
+                    
+                    
+                                    </div>
+                                </div>
+                            </fieldset>
+                    
+                    
+                            <button type="submit" class="btn btn-primary enrollSubmitButton" onsubmit="myFunction()">Submit</button>
+                    
+                            <div class="section-lead">*Share your details so that we can guide you through the course structure.</div>
+                            <!-- <div class="section-lead">You can confirm your spot by paying just ₹1000 in the next page</div> -->
+                    
+                        </form>
+                    
+                        </div>
+                    </div>
+                </div>
+            
+                
+                </div>																														
+            </div>
+            
+    </section>
 
     <!--~~~ Using Netlify Form  ~~~-->
-    <form name="enrollForm" method="POST" class="candidateEnrolForm" data-netlify="true"
-        action="./pay-and-confirm-slot.html">
-
-        <h4 class="title-script">Registration Details</h4>
-
-        <div class=" form-group selectCourse">
-            <label for="emailInputLabel">Email address *</label>
-            <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail"
-                aria-describedby="emailHelp" placeholder="email" required>
-        </div>
-
-        <div class="form-group selectCourse">
-            <label for="nameInputLabel">Candidate Name *</label>
-            <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp"
-                name="candidateName" placeholder="full name" required>
-        </div>
-
-        <div class="form-group selectCourse">
-            <label for="instituteInputLabel">Candidate's Institution *</label>
-            <input type="text" class="form-control form-control-lg" id="instituteInputLabel" name="candidateInstitute"
-                aria-describedby="instituteHelp" placeholder="college name" required>
-        </div>
-
-        <div class="form-group selectCourse">
-            <label for="contactNumberInputLabel">Contact Number *</label>
-            <input type="text" class="form-control form-control-lg" id="contactNumInputLabel" name="mobileNum"
-                aria-describedby="contactHelp" placeholder="mobile number" pattern="[1-9]{1}[0-9]{9}" maxlength="10"
-                oninvalid="this.setCustomValidity(this.willValidate?'':'Please enter a valid Mobile Number')" required>
-        </div>
-
-        <fieldset class="form-group selectCourse">
-            <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Your current graduation Course? *</legend>
-                <div class="col-sm-10">
-                    <div class="form-check selectCourse">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="MCA"
-                            checked>
-                        <label class="form-check-label form-control form-control-lg" for="gridRadios1">
-                            MCA
-                        </label>
-                    </div>
-                    <div class="form-check selectCourse">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="BCA">
-                        <label class="form-check-label form-control  form-control-lg" for="gridRadios2">
-                            BCA
-                        </label>
-                    </div>
-                    <div class="form-check selectCourse">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                            value="BE Or BSc or Others">
-                        <label class="form-check-label form-control form-control-lg" for="gridRadios3">
-                            BE or BSc.
-                        </label>
-                    </div>
-
-
-                </div>
-            </div>
-        </fieldset>
-
-
-        <button type="submit" class="btn btn-primary enrollSubmitButton" onsubmit="myFunction()">Submit</button>
-
-        <div class="section-lead">*Share your details so that we can guide you through the course structure.</div>
-        <!-- <div class="section-lead">You can confirm your spot by paying just ₹1000 in the next page</div> -->
-
-    </form>
-
+   
 
     <!--~~~ Web Form End ~~~-->
 
