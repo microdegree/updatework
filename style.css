@@ -11941,8 +11941,8 @@ a:focus {
 }
 
 .destinations-area .single-destinations .details {
-  background: rgb(246, 243, 255);
-  padding: 20px;
+  background: rgb(255, 255, 255);
+  padding: 5px;
 }
 
 .destinations-area .single-destinations .details h4 {
