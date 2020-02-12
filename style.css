@@ -3323,8 +3323,8 @@ textarea {
 }
 
 .hero-section.hero-agency .hero-content .section-header.style-seven .section-title {
-  background: -webkit-linear-gradient(left, #EB5C74, #EB5C74);
-  background: linear-gradient(to right, #EB5C74, #EB5C74);
+  background: -webkit-linear-gradient(left, #5c5fa0, #5c5fa0);
+  background: linear-gradient(to right, #5c5fa0, #5c5fa0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 32px;
