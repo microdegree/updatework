@@ -77,7 +77,10 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
         .p {
           text-align: center;
@@ -153,7 +156,7 @@
         <div class="col-lg-6">
       <div class="formDescription">
   
-        <img src="assets/images/agency/popup.jpg" alt="img" >
+        <img src="assets/images/agency/popup.jpg" alt="img" style="height: 300px;">
       </div>
     </div>
     
@@ -171,61 +174,59 @@
             <a class="btn-custom btn-font" href="#open-modal" style="background-color: #078311;color: rgb(255, 255, 255);">👋 Enroll Now</a>
           </div>
         </div>
-        <div id="open-modal" class="modal-window">
-          <div>
+        <div id="open-modal" class="modal-window"  >
+          <div style="background-color: #d9eff0;">
             <a href="#" title="Close" class="modal-close">Close</a>
             <div class="details">
-                <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm" data-netlify="true"
+                <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm border border-primary" data-netlify="true"
                 action="./pay-and-confirm-slot.html">
-               <center><h2 class="mb-10" style="color:#f02d6e">Sign Up</h1></center> 
+               <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;">Book a seat</h1></center> 
                 <!-- <h4 class="title-script">Registration Details</h4> -->
                 <div class="form-group selectCourse" >
                     <label for="nameInputLabel">Full Name *</label>
                     <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;"
                         name="candidateName" placeholder="" required>
                 </div>
-                <div class=" form-group selectCourse">
+                <div class=" form-group selectCourse" style="margin-top: -10px;">
                     <label for="emailInputLabel">Email address *</label>
                     <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;"
                         aria-describedby="emailHelp" placeholder="" required >
                 </div>
               
-                 <fieldset class="form-group selectCourse " >
+                 <fieldset class="form-group selectCourse " style="margin-top: -20px;" >
                     <div class="row">
 
-                        <div class="col-sm-10" >
-                           <center><div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a" checked>
+                        <div class="col-sm-2" >
+                         <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Student"  checked>
                                 <label class="form-check-label" for="exampleRadios1">
                                         Student
                                     </label>
                               </div>
                             
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="b">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Professional" >
                                 <label class="form-check-label" for="exampleRadios2">
                                         Professional
                                     </label>
                               </div>
-                            </center> 
+                            
                         </div>
                     </div>
                 </fieldset>
             <center> 
-                <a class="btn-custom btn-font" onclick="onButtonClick()" style="color: white;">
-                    Sign Up
-                </a>
+                <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
             </center> 
             </form>
         </div>
             </div>
             </div>
-      
+        </center> 
       </div>
     </div>
       <!-- End MailChimp Signup Form -->
     </div>
-    </center>
+ 
     <div class="site-content agency-site-content" >
 
         <section id="home" class="hero-section hero-agency" style="margin-top: -100px;">
@@ -266,47 +267,45 @@
                                       <div>
                                         <a href="#" title="Close" class="modal-close">Close</a>
                                         <div class="details">
-                                            <form name="enrollForm" method="POST" class="candidateEnrolForm" data-netlify="true"
+                                            <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm border border-primary" data-netlify="true"
                                             action="./pay-and-confirm-slot.html">
-                                           <center><h2 class="mb-10" style="color:#f02d6e">Sign Up</h1></center> 
+                                           <center><h2 class="mb-10" style="color:#f02d6e">Book a seat</h1></center> 
                                             <!-- <h4 class="title-script">Registration Details</h4> -->
                                             <div class="form-group selectCourse" >
                                                 <label for="nameInputLabel">Full Name *</label>
                                                 <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;"
                                                     name="candidateName" placeholder="" required>
                                             </div>
-                                            <div class=" form-group selectCourse">
+                                            <div class=" form-group selectCourse" style="margin-top: -10px;">
                                                 <label for="emailInputLabel">Email address *</label>
                                                 <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;"
                                                     aria-describedby="emailHelp" placeholder="" required >
                                             </div>
                                           
-                                             <fieldset class="form-group selectCourse " >
+                                             <fieldset class="form-group selectCourse " style="margin-top: -20px;" >
                                                 <div class="row">
                             
-                                                    <div class="col-sm-10" >
-                                                       <center><div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a" checked>
+                                                    <div class="col-sm-2" >
+                                                     <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Student"  checked>
                                                             <label class="form-check-label" for="exampleRadios1">
                                                                     Student
                                                                 </label>
                                                           </div>
                                                         
                                                           <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="b">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Professional" >
                                                             <label class="form-check-label" for="exampleRadios2">
                                                                     Professional
                                                                 </label>
                                                           </div>
-                                                        </center> 
+                                                        
                                                     </div>
                                                 </div>
                                             </fieldset>
                                             <center> 
-                                                <a class="btn-custom btn-font" onclick="onButtonClick()" style="color: white;">
-                                                    Sign Up
-                                                </a>
-                                            </center>
+                                                <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
+                                            </center> 
                                     
                                         </form>
                                     
@@ -421,47 +420,45 @@
                                       <div>
                                         <a href="#" title="Close" class="modal-close">Close</a>
                                         <div class="details">
-                                            <form name="enrollForm" method="POST" class="candidateEnrolForm" data-netlify="true"
+                                            <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm border border-primary" data-netlify="true"
                                             action="./pay-and-confirm-slot.html">
-                                           <center><h2 class="mb-10" style="color:#f02d6e">Sign Up</h1></center> 
+                                           <center><h2 class="mb-10" style="color:#f02d6e">Book a seat</h1></center> 
                                             <!-- <h4 class="title-script">Registration Details</h4> -->
                                             <div class="form-group selectCourse" >
                                                 <label for="nameInputLabel">Full Name *</label>
                                                 <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;"
                                                     name="candidateName" placeholder="" required>
                                             </div>
-                                            <div class=" form-group selectCourse">
+                                            <div class=" form-group selectCourse" style="margin-top: -10px;">
                                                 <label for="emailInputLabel">Email address *</label>
                                                 <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;"
                                                     aria-describedby="emailHelp" placeholder="" required >
                                             </div>
                                           
-                                             <fieldset class="form-group selectCourse " >
+                                             <fieldset class="form-group selectCourse " style="margin-top: -20px;" >
                                                 <div class="row">
                             
-                                                    <div class="col-sm-10" >
-                                                       <center><div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a" checked>
+                                                    <div class="col-sm-2" >
+                                                     <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Student"  checked>
                                                             <label class="form-check-label" for="exampleRadios1">
                                                                     Student
                                                                 </label>
                                                           </div>
                                                         
                                                           <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="b">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Professional" >
                                                             <label class="form-check-label" for="exampleRadios2">
                                                                     Professional
                                                                 </label>
                                                           </div>
-                                                        </center> 
+                                                        
                                                     </div>
                                                 </div>
                                             </fieldset>
                                             <center> 
-                                                <a class="btn-custom btn-font" onclick="onButtonClick()" style="color: white;">
-                                                    Sign Up
-                                                </a>
-                                            </center>
+                                                <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
+                                            </center> 
                                         </form>
                                     
                                         </div>
@@ -1122,86 +1119,107 @@
         <!--  -->
 
 
-
-        <section id="contact" class="contact-form-section ptb-10">
+   
+        <footer class="footer-section">
             <div class="container">
-                <div class="container text-center text-md-left">
-                <div class="row">
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-4 mx-auto" >
-
-                        <!-- Content -->
-                        <h2 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">CONTACT US</h2>
-                  
-                            <ul class="list-unstyled">
-                                <li >
-                                    <a href="" ><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" >3rd Floor, Plama Center, Bejai - Kapikad Rd, Mangalore, Karnataka 575004.</p></a>
-                                </li>
-                                <li>
-                                    <a href="#course"><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">+91 97434 95272</p></a>
-                                </li>
-                                <li>
-                                    <a href="#faq"><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">+91 78993 95293 </p></a>
-                                </li>
-                                <li>
-                                    <a href="#!"><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">hello@microdegree.work</p></a>
-                                </li>
-                                </ul>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-2 mx-auto">
-
-                        <!-- Links -->
-                        <h2 class="font-weight-bold text-uppercase mt-3 mb-4  " style="color: white;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">ABOUT</h2>
-
-                        <ul class="list-unstyled">
-                        <li >
-                            <a href="#home" ><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" >Home</p></a>
-                        </li>
-                        <li>
-                            <a href="#course"><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Course</p></a>
-                        </li>
-                        <li>
-                            <a href="#faq"><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">F.A.Qs</p></a>
-                        </li>
-                        <li>
-                            <a href="#!"><p style="color: white;font-size: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hiring Partners</p></a>
-                        </li>
-                        </ul>
-
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-2 mx-auto">
-
-                        <!-- Links -->
-                        <h2 class="font-weight-bold text-uppercase mt-3 mb-4  " style="color: white;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">FOLLOW</h2>
-
-                        <ul class="list-unstyled">
-                        <li >
-                            <a href=" https://www.linkedin.com/company/microdegree/?viewAsMember=true"><img src="assets/images/icons/link1.png" 
-                                data-aos-duration="1500" alt="logo"></a><br><br>
-                           
-                        </li>
-                        <li>
-                            <a href=" https://www.facebook.com/MicroDegree-101072281390361/?modal=admin_todo_tour"><img src="assets/images/icons/facebook.png" 
-                                data-aos-duration="1500" alt="logo"></a><br><br>
-                           
-                        </li>
-                        <li>
-                            <a href=" https://www.instagram.com/micro.degree/?hl=en"><img src="assets/images/icons/instagram.png" 
-                                data-aos-duration="1500" alt="logo"></a><br><br>
-                        </li>
-                        <li>
-                            <a href=" https://twitter.com/DegreeMicro"><img src="assets/images/icons/twitter.png" 
-                                data-aos-duration="1500" alt="logo"></a><br><br>
-                        </li>
-                        </ul>
-
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4 style="color: white;">Find us</h4>
+                                    <span style="color: white;">3rd Floor, Plama Center, Bejai<br>Kapikad Rd, Mangalore,<br> Karnataka 575004.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4 style="color: white;">Call us</h4>
+                                    <span style="color: white;">+91 97434 95272 <br> +91 78993 95293</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4 style="color: white;">Mail us</h4>
+                                    <span style="color: white;">hello@microdegree.work</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                               
+                                <div class="footer-text">
+                                    <p>Bootcamp for IT students & early professionals to gain hands-on coding
+                                        experience, build real world products & get
+                                        placed with our top notch hiring partners.</p>
+                                </div>
+                                <br>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="https://www.facebook.com/MicroDegree-101072281390361/?modal=admin_todo_tour"><i class="fab fa-facebook-f "></i></a>
+                                    <a href="https://twitter.com/DegreeMicro"><i class="fab fa-twitter "></i></a>
+                                    <a href="https://www.instagram.com/micro.degree/?hl=en"><i class="fab fa-instagram "></i></a>
+                                    <a href="https://www.linkedin.com/company/microdegree/?viewAsMember=true"><i class="fab fa-linkedin "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2019, All Right Reserved @<a >MicroDegree</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
