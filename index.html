@@ -2,6 +2,15 @@
 <html lang="zxx">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155317684-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155317684-1');
+    </script>
 
     <!-- Google Tag Manager -->
     <script>
@@ -89,8 +98,6 @@
          
         }
         </style>
-  
-
 </head>
 
 <body class="home-agency">
@@ -138,97 +145,89 @@
                 <img src="assets/images/logo/microdegreelogo.png" alt="logo" style="padding: 12px;height: 50px;width: 120px;margin-top: 5px;">
             </a>
         </div><!-- end mobile menu -->
-    </header>
+</header>
     <!-- End site header -->
 
     <!-- Sticky Header -->
     <div id="sticky-header"></div>
-    <center>
-    <div class="instructions"></div>
+   
+<section>
+        <div class="instructions"></div>
+        <div id="bkgOverlay" class="backgroundOverlay"></div>
+        <div id="delayedPopup" class="delayedPopupWindow">
+            <a href="#" id="btnClose" title="Click here to close this deal box.">[ X ]</a>
+            <div class="card" style="padding: 50px;">
+            <div class="row">
 
-    <div id="bkgOverlay" class="backgroundOverlay"></div>
-      
-    <div id="delayedPopup" class="delayedPopupWindow">
-      <!-- This is the close button -->
-      <a href="#" id="btnClose" title="Click here to close this deal box.">[ X ]</a>
-      <!-- This is the left side of the popup for the description -->
-      <div class="row">
-        <div class="col-lg-6">
-      <div class="formDescription">
-  
-        <img src="assets/images/agency/popup.jpg" alt="img" style="height: 300px;">
-      </div>
-    </div>
-    
-      <!-- Begin MailChimp Signup Form -->
-      <div class="col-lg-6">
-      <div >
-    </br>
-      <h3><span style="color: #480f92; font-weight: bold;">Frontend Development Program</span></h3>
-      <p style="font-size: 19px;">
-          Live Super Class on ReactJS
-      </p>
-      <h7 style="margin-top: -45px; color: red;font-weight: bold;">Live Super Class | 23rd and 24th May | 10 am - 6 pm</h7>
-    </br></br></br>
-        <div class="interior">
-            <a class="btn-custom btn-font" href="#open-modal" style="background-color: #078311;color: rgb(255, 255, 255);">👋 Enroll Now</a>
-          </div>
-        </div>
-        <div id="open-modal" class="modal-window"  >
-          <div style="background-color: #d9eff0;">
-            <a href="#" title="Close" class="modal-close">Close</a>
-            <div class="details">
-                <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm border border-primary" data-netlify="true"
-                action="./pay-and-confirm-slot.html">
-               <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;">Book a seat</h1></center> 
-                <!-- <h4 class="title-script">Registration Details</h4> -->
-                <div class="form-group selectCourse" >
+            <div class="col-lg-6">
+            <div class="formDescription">
+            <img src="assets/images/agency/popup.jpg" class="responsive">
+            </div>
+            </div>
+
+            <div class="col-lg-6">
+            <h3><span style="color: #480f92; font-weight: bold;">Frontend Development Program</span></h3>
+            <p style="font-size: 19px;">
+                Live Super Class on ReactJS
+            </p>
+            <h7 style="margin-top: -45px; color: red;font-weight: bold;">Live Super Class | 23rd and 24th May | 10 am - 6 pm</h7>
+            </br></br></br>
+            <div class="interior">
+                <a class="btn-custom btn-font" href="#open-modal" style="background-color: #078311;color: rgb(255, 255, 255);">👋 Enroll Now</a>
+            </div>
+            </div>
+
+                <div id="open-modal" class="modal-window"  >
+                <div style="background-color: #ffffff;">
+                <a href="#" title="Close" class="modal-close">Close</a>
+
+                <div class="details">
+                    <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm border border-primary" data-netlify="true"
+                        action="./pay-and-confirm-slot.html">
+                    <center><h2 class="mb-10" style="color:#f02d6e;margin-top: 10px;">Book a seat</h1></center> 
+                    <div class="form-group selectCourse" >
                     <label for="nameInputLabel">Full Name *</label>
                     <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;"
-                        name="candidateName" placeholder="" required>
-                </div>
-                <div class=" form-group selectCourse" style="margin-top: -10px;">
+                                name="candidateName" placeholder="" required>
+                    </div>
+                    <div class=" form-group selectCourse" style="margin-top: -10px;">
                     <label for="emailInputLabel">Email address *</label>
                     <input type="email" class="form-control form-control-lg" id="emailInputLabel" name="candidateEmail" style="height: 35px;"
-                        aria-describedby="emailHelp" placeholder="" required >
-                </div>
-              
-                 <fieldset class="form-group selectCourse " style="margin-top: -20px;" >
-                    <div class="row">
-
-                        <div class="col-sm-2" >
-                         <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Student"  checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                        Student
-                                    </label>
-                              </div>
-                            
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Professional" >
-                                <label class="form-check-label" for="exampleRadios2">
-                                        Professional
-                                    </label>
-                              </div>
-                            
-                        </div>
+                                aria-describedby="emailHelp" placeholder="" required >
                     </div>
-                </fieldset>
-            <center> 
-                <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
-            </center> 
-            </form>
-        </div>
-            </div>
-            </div>
-        </center> 
-      </div>
-    </div>
-      <!-- End MailChimp Signup Form -->
-    </div>
- 
-    <div class="site-content agency-site-content" >
+                        
+                    <fieldset class="form-group selectCourse " style="margin-top: -20px;" >
+                            <div class="row">
+                            <div class="col-sm-2" >
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Student"  checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                                Student
+                            </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Professional" >
+                            <label class="form-check-label" for="exampleRadios2">
+                                                Professional
+                            </label>
+                            </div>
+                            </div>
+                            </div>
+                    </fieldset>
 
+                    <center> 
+                        <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
+                    </center> 
+                    </form>
+                </div>
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>
+</section>
+ 
+<div class="site-content agency-site-content" >
         <section id="home" class="hero-section hero-agency" style="margin-top: -100px;">
             <div class="container">
                 <div class="row align-items-center">
@@ -244,9 +243,9 @@
                             <div class="section-header style-seven">
                          
                                 <div class="flex">
-                                    <!-- <p class="section-title" id="word" style="font-size: 40px;font-weight: bolder;">UpSkill | Build | Land Jobs  </p> -->
+   
                                     <p class="section-title"  style="font-size: 40px;font-weight: bolder;">UpSkill . Build . Land Jobs  </p>
-                                    <!-- <p class="section-title blink">|</p> -->
+                                  
                                 </div>
                                 <div >
                                     <p style="font-size: 25px;">
@@ -254,11 +253,7 @@
                                     </p>
 
                                     <p class="title-script"  style="font-size: 20px;margin-top: -30px;">Live Super Class | 23rd and 24th May | 10 am - 6 pm</p><br>
-                                    
-                                    
-                                    
-                                    <!-- <a target="_blanck();" class="btn-custom btn-font"
-                                    href="https://forms.gle/ddh5DLGZVHDqjKtt8">Enrol Now</a> -->
+                                 
                                     <div class="interior">
                                         <a class="btn-custom btn-font " href="#open-modal2" > Enrol now at just ₹1,349/-</a>
                                       </div>
@@ -270,7 +265,7 @@
                                             <form name="crashCoursEnrollForm" method="POST" class="candidateEnrolForm border border-primary" data-netlify="true"
                                             action="./pay-and-confirm-slot.html">
                                            <center><h2 class="mb-10" style="color:#f02d6e">Book a seat</h1></center> 
-                                            <!-- <h4 class="title-script">Registration Details</h4> -->
+                                            
                                             <div class="form-group selectCourse" >
                                                 <label for="nameInputLabel">Full Name *</label>
                                                 <input type="text" class="form-control form-control-lg" id="nameInputLabel" aria-describedby="nameHelp" style="height: 35px;"
@@ -306,12 +301,9 @@
                                             <center> 
                                                 <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
                                             </center> 
-                                    
                                         </form>
-                                    
                                         </div>
                                         </div>
-                                  
                                   </div>
                                 </div>
                             </div>
@@ -338,28 +330,14 @@
                                 <img src="assets/images/course/fullstack2.png" alt="thumb">
                             </div>
                             <div class="room-info room-card">
-                             
-
-
-                                <!-- <div class="box">
-                                    <h5 class="title1" style="float: right;color: red;font-weight: bold;margin-top: -33px;">Offline</h5>
-                                    <h5 class="title2" style="margin-top: -15px;">THIS IS COOL</h5>
-                                  </div> -->
                                 <div id="container"  >
-                                    
-                                    
                                     <a ><div id="texts" style="float: right;color: red;font-weight: bold;margin-top: -33px;"> 
                                         Online
                                     </div></a>
-                                   
-                                
                                 </div>
                                 <h2 style="margin-top: -50px;"><a href="./full-stack-development.html">Frontend Development Program</a></h2>
-                                <!-- <a class=" btn-primary1 btn-gradient1" style="height: 30px;font-weight: bold;color: white;" href="">JOB GUARANTEE</a> -->
-                               
                                 <h7 style="margin-top: -45px;">Live Super Class | 10 am - 6 pm</h7>
                                 <p id="demo" class="p1" style="color: red;font-weight: bold;"></p>
-                                
                                 <script>
                                     // Set the date we're counting down to
                                     var countDownDate = new Date("May 23, 2020 12:00:00").getTime();
@@ -390,23 +368,6 @@
                                       }
                                     }, 1000);
                                     </script>
-  
-                                <!-- <p style="margin-top: -20px;">
-                                    Get a high - paying job as a Web Developer in a top tech Company.
-                                </p>  -->
-      
-                               
-                                <!-- <div id="container" >
-                                    <a href=""><div id="image" style="float:left;height: 20px;width: 20px;">
-                                        <img src="assets/images/agency/clock.jpg"  align="left"/>
-                                    </div></a>
-                                    <a href=""><div id="texts" style="float:left;color: #0e077a;"> 
-                                        300 Hours
-                                    </div></a>
- 
-                                </div> -->
-                    
-                             
                                     <div class="interior">
                                         <a href="./full-stack-development.html"><div id="image" style="float: right;height: 20px;width: 20px;">
                                             <img src="assets/images/agency/arrow.png"  align="left"/>
@@ -460,17 +421,10 @@
                                                 <button type="submit" class="btn-custom btn-font enrollSubmitButton" onsubmit="myFunction()" style="margin-top: -40px;">Submit</button>
                                             </center> 
                                         </form>
-                                    
                                         </div>
                                         </div>
-                                  
                                   </div>
-                                
-                                   
                                 </div>
-
-                                <!-- <a target="_blanck();" class="btn-custom btn-font" style="margin-top: -30px;"
-                                   href="./full-stack-development.html">Learn More</a> -->
                             </div>
                      <div class="col-lg-4">
                     <div class="single-room text-center" data-aos="fade-up" data-aos-duration="1200">
@@ -478,12 +432,7 @@
                             <img src="assets/images/course/data-science.jpg" alt="thumb">
                         </div>
                         <div class="room-info room-card">
-                            <!-- <div class="box">
-                                <h5 class="title1" style="float: right;color: red;font-weight: bold;margin-top: -33px;">Online</h5>
-                                <h5 class="title2" style="margin-top: -15px;">THIS IS COOL</h5>
-                              </div> -->
                             <div id="container"  >
-                                    
                                     
                                 <a ><div id="texts" style="float: right;color: red;font-weight: bold;margin-top: -33px;"> 
                                     Online
@@ -494,33 +443,6 @@
                             <h2><a href="javascript:void(0)">Data Science</a></h2>
                             <h7 style="margin-top: -45px;color: red;font-weight: bold;">Next Batch Starts Soon</h7>
                             <p>Your journey to becoming a Data Scientist starts here. Guaranteed</p>
-
-
-
-                            <!-- <div id="container" >
-                                <a href=""><div id="image" style="float:left;height: 20px;width: 20px;">
-                                    <img src="assets/images/agency/clock.jpg"  align="left"/>
-                                </div></a>
-                                <a href=""><div id="texts" style="float:left;color: #0e077a;"> 
-                                    300 Hours
-                                </div></a>
-
-                            </div> -->
-                
-<!--                          
-                            <div id="container" >
-                                <a href=""><div id="image" style="float: right;height: 20px;width: 20px;">
-                                    <img src="assets/images/agency/arrow.png"  align="left"/>
-                                </div></a>
-                                <a href=""><div id="texts" style="float:right;color: #0e077a;margin-top: -2px;"> 
-                                    Learn More
-                                </div></a>
-                                
-                            
-                               
-                            </div> -->
-                            <!-- <a target="_blanck();" class="btn-custom btn-font"
-                            href="./full-stack-development.html">Coming Soon</a> -->
                         </div>
                     </div>
                 </div>
@@ -532,46 +454,15 @@
                             <img src="assets/images/course/machine-learning1.png" alt="thumb">
                         </div>
                         <div class="room-info room-card">
-                            <!-- <div class="box">
-                                <h5 class="title1" style="float: right;color: red;font-weight: bold;margin-top: -33px;">Online</h5>
-                                <h5 class="title2" style="margin-top: -15px;">THIS IS COOL</h5>
-                              </div> -->
                             <div id="container"  >
-                                    
-                                    
                                 <a ><div id="texts" style="float: right;color: red;font-weight: bold;margin-top: -33px;"> 
                                     Online
                                 </div></a>
-                               
-                            
                             </div>
                             <h2><a href="javascript:void(0)">Machine Learning</a></h2>
                             <h7 style="margin-top: -45px;color: red;font-weight: bold;">Next Batch Starts Soon</h7>
                             <p>Become a machine learning expert learn in our blended online and Offline sessions.</p>
-                               <!-- <div id="container" >
-                                    <a href=""><div id="image" style="float:left;height: 20px;width: 20px;">
-                                        <img src="assets/images/agency/clock.jpg"  align="left"/>
-                                    </div></a>
-                                    <a href=""><div id="texts" style="float:left;color: #0e077a;"> 
-                                        300 Hours
-                                    </div></a>
- 
-                                </div> -->
-                    
-                             
-                                <!-- <div id="container" >
-                                    <a href=""><div id="image" style="float: right;height: 20px;width: 20px;">
-                                        <img src="assets/images/agency/arrow.png"  align="left"/>
-                                    </div></a>
-                                    <a href=""><div id="texts" style="float:right;color: #0e077a;margin-top: -2px;"> 
-                                        Learn More
-                                    </div></a>
-                                    
-                                
-                                   
-                                </div> -->
-                            <!-- <a target="_blanck();" class="btn-custom btn-font"
-                            href="">Coming Soon</a> -->
+                            
                         </div>
                     </div>
                 </div> 
@@ -685,134 +576,7 @@
                 </div>
             </div>
         </section>
-
-
-        <!-- <div class="why-choose-us pt-100 bg-gray">
-            <div class="container">
-                <div class="section-header style-seven text-center" data-aos="fade-zoom-in" data-aos-duration="1000">
-                    <h4 class="title-script">Transform your Careers in <b>250+ hours</b></h4>
-                    <h2 class="section-title">Micro Timeline</h2>
-                </div>
-                
-                <div class="row mt-30 mb-30">
-                    <div class="col-lg-12 text-center">
-                        <ul class="timeline" id="timeline" data-aos="fade-right" data-aos-duration="1500">
-                            <li class="li complete width-timeline">
-                                <div class="timestamp">
-                                    <span>250+ hrs of Intensive Program</span>
-                                </div>
-                                <div class="status">
-                                    <h4> Full Stack Development </h4>
-                                </div>
-                            </li>
-                            <li class="li complete width-timeline">
-                                <div class="timestamp">
-                                    <span>Capstone Project</span>
-                                </div>
-                                <div class="status">
-                                    <h4> Build Real World Products </h4>
-                                </div>
-                            </li>
-                            <li class="li complete width-timeline">
-                                <div class="timestamp">
-                                    <span>Get Placed</span>
-                                </div>
-                                <div class="status">
-                                    <h4> Quality Placement Assistance </h4>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                   
-
-                    <!-- <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge"><img src="assets/images/icons/clock.png" alt="icon"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">2 Month Intensive Program</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                    Full Stack Development Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
-                                    Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis
-                                    quis leo.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge warning"><img src="assets/images/icons/calendar.png" alt="icon"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Capstone Project</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                    Build Real World Products Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.
-                                    Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis
-                                    quis leo.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge danger"><img src="assets/images/icons/placement.png" alt="icon"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Get Placed</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                    Placement Assistance until you get placed
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul> -->
-                    <!-- <div class="col-lg-4">
-                    <div class="features-icon-center features-item style-four timeline-shadow" data-aos="fade-right" data-aos-duration="1200">
-                        <div class="features-icon">
-                            <img src="assets/images/icons/clock.png" alt="icon">
-                        </div>
-                        <div class="features-content">
-                            <h3>180+ Hours</h3>
-                            <p>Hands on Course Learning</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="features-icon-center features-item style-four timeline-shadow" data-aos="fade-zoom-in" data-aos-duration="1200">
-                        <div class="features-icon">
-                            <img src="assets/images/icons/calendar.png" alt="icon">
-                        </div>
-                        <div class="features-content">
-                            <h3>Upto 2 Months</h3>
-                            <p>Internship</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="features-icon-center features-item style-four timeline-shadow" data-aos="fade-left" data-aos-duration="1200">
-                        <div class="features-icon">
-                            <img src="assets/images/icons/placement.png" alt="icon">
-                        </div>
-                        <div class="features-content">
-                            <h3>Get Absorbed</h3>
-                            <p>Placement Support</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- </div>
-            </div>
-        </div> --> 
-
-
-
+        
         <div class="services-section services-bg style-two pt-50 pb-50"
              style="background-image:url('assets/images/agency/services-bg.png')">
             <div class="container">
@@ -889,114 +653,6 @@
                 </div>
             </div>
         </div>
-
-
-       
-
-        <!-- <section id="blog" class="our-portfolio-section">
-        <div class="angle-shape-area top">
-            <div class="angle-shape">
-                <img src="assets/images/pattern/wave-top.png" alt="img">
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <div class="section-header style-seven" data-aos="fade-zoom-in" data-aos-duration="1200">
-                        <h2 class="section-title">Our Blogs</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="portfolio-work-area">
-            <div class="container-fluid">
-                <div class="protfolio-carousel owl-carousel carousel-nav-dots">
-
-                    <div class="single-work">
-                        <div class="thumb">
-                            <img src="assets/images/agency/work/img-3.jpg" alt="img">
-                            <div class="demo-link">
-                                <a href="#">read more</a>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <div class="work-title">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                            </div>
-                            <div class="work-cat">
-                                <a href="#">Lorem ipsum</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="single-work">
-                        <div class="thumb">
-                            <img src="assets/images/agency/work/img-2.jpg" alt="img">
-                            <div class="demo-link">
-                                <a href="#">read more</a>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <div class="work-title">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                            </div>
-                            <div class="work-cat">
-                                <a href="#">Lorem ipsum</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="single-work">
-                        <div class="thumb">
-                            <img src="assets/images/agency/work/img-3.jpg" alt="img">
-                            <div class="demo-link">
-                                <a href="#">read more</a>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <div class="work-title">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                            </div>
-                            <div class="work-cat">
-                                <a href="#">Lorem ipsum</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="single-work">
-                        <div class="thumb">
-                            <img src="assets/images/agency/work/img-2.jpg" alt="img">
-                            <div class="demo-link">
-                                <a href="#">read more</a>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <div class="work-title">
-                                <h2>Essential fashion</h2>
-                            </div>
-                            <div class="work-cat">
-                                <a href="#">Strategy / Mobile App</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="angle-shape-area bottom">
-            <div class="angle-shape">
-                <img src="assets/images/pattern/wave-bottom.png" alt="img">
-            </div>
-        </div>
-    </section> -->
-
 
         <section id="faq" class="faq-section style-one ptb-50 bg-gray">
             <div class="container">
@@ -1116,10 +772,6 @@
                 </div>
             </div>
         </section>
-        <!--  -->
-
-
-   
         <footer class="footer-section">
             <div class="container">
                 <div class="footer-cta pt-5 pb-5">
@@ -1222,11 +874,6 @@
         </footer>
 
     </div>
-
-
-
-    <!-- End site content -->
-
                       
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>             
 
